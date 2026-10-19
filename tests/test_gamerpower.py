@@ -74,7 +74,12 @@ def test_real_samples():
     )
     assert g.worth == 19.99 and g.end_date.hour == 23 and g.users == 30590
     assert g.platforms == ("PC", "Android", "iOS", "Epic Games Store")
-    no_worth = {"id": 3792, "title": "Castlevania", "worth": "N/A", "end_date": "2026-10-24 23:59:00"}
+    no_worth = {
+        "id": 3792,
+        "title": "Castlevania",
+        "worth": "N/A",
+        "end_date": "2026-10-24 23:59:00",
+    }
     assert Giveaway.from_dict(no_worth).worth is None
     assert Worth.from_dict(
         {"active_giveaways_number": 107, "worth_estimation_usd": "538.77"}

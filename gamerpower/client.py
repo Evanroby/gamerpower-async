@@ -13,6 +13,7 @@ from .enums import SortBy
 from .errors import GamerPowerError, HTTPError, NotFound
 from .models import Giveaway, Worth
 
+
 BASE_URL = "https://www.gamerpower.com/api/"
 MIN_INTERVAL = 0.15
 RETRIES = 3

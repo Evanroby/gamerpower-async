@@ -5,6 +5,7 @@ from .enums import GiveawayType, Platform, SortBy
 from .errors import GamerPowerError, HTTPError, NotFound
 from .models import Giveaway, Worth
 
+
 __version__ = "0.1.0"
 
 __all__ = [

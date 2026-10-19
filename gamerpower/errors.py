@@ -2,7 +2,7 @@ class GamerPowerError(Exception):
     """Base class for every error raised by this library."""
 
 
-class NotFound(GamerPowerError):
+class NotFound(GamerPowerError):  # noqa: N818
     """The requested giveaway does not exist.
 
     Raised by :meth:`~gamerpower.GamerPower.giveaway` when the API answers 404 or replies with

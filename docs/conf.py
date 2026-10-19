@@ -1,5 +1,6 @@
 import importlib.metadata
 
+
 project = "gamerpower-async"
 author = "evanroby"
 copyright = "2026, evanroby"

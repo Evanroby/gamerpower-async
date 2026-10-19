@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
 
+
 DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 
 
@@ -23,7 +24,7 @@ def _date(value: Any) -> datetime | None:
 
 @dataclass(frozen=True, slots=True)
 class Giveaway:
-    """One giveaway, as returned by the API.
+    r"""One giveaway, as returned by the API.
 
     Instances are immutable. Text fields the API leaves out are empty strings.
 
