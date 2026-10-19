@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gamerpower-async"
+version = "0.1.0"
+description = "Unofficial async Python wrapper for the GamerPower giveaways API"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.27"]
+
+[project.optional-dependencies]
+docs = ["sphinx>=7.2", "furo>=2024.1.29"]
+
+[tool.setuptools]
+packages = ["gamerpower"]
+
+[tool.ruff]
+line-length = 99
+target-version = "py311"
+exclude = ["scratch"]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+    "N",
+    "UP",
+    "B",
+    "C4",
+    "SIM",
+    "PTH",
+    "RUF",
+    "D",
+    "ASYNC",
+    "S",
+]
+ignore = [
+    "E501",
+    "N813",
+    "RUF001",
+    "RUF002",
+    "RUF003",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D107",
+    "D205",
+    "ASYNC109",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# asserts are how the tests check things
+"tests/*" = ["S101"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+known-first-party = ["gamerpower"]
+force-single-line = false
+lines-after-imports = 2
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ty.rules]
+invalid-return-type = "error"
+invalid-await = "error"
+unsupported-operator = "error"
+
+invalid-argument-type = "warn"
+invalid-assignment = "warn"
+unresolved-attribute = "warn"
+
+invalid-method-override = "error"
+
+possibly-unresolved-reference = "warn"
+possibly-missing-attribute = "warn"
+missing-slot = "warn"
+unresolved-import = "warn"
+no-matching-overload = "warn"
+
+[tool.ty.src]
+exclude = ["scratch", "tests"]
+
+[tool.ty.terminal]
+error-on-warning = false
