@@ -1,8 +1,10 @@
 # gamerpower-async
 
+[![Documentation](https://img.shields.io/readthedocs/gamerpower-async)](https://gamerpower-async.readthedocs.io/en/latest/) [![PyPI version](https://img.shields.io/pypi/v/mkdocs-badges)](https://pypi.org/project/gamerpower-async/)
+
 Unofficial async Python wrapper for the [GamerPower API](https://www.gamerpower.com/api-read) (free games, in-game loot, beta keys).
 
-[Docs](https://gamerpower-async.readthedocs.io/en/latest/) · [PyPI](https://pypi.org/project/gamerpower-async/)
+You can find the official documentation for the API wraper [here](https://gamerpower-async.readthedocs.io/en/latest/).
 
 Not affiliated with GamerPower. The API is free and needs no key. Their terms ask for an active hyperlink back to [GamerPower.com](https://www.gamerpower.com) wherever you show the data, and you may not sell the data or claim it as your own.
 
