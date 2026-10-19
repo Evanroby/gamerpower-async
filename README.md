@@ -4,7 +4,7 @@
 
 Unofficial async Python wrapper for the [GamerPower API](https://www.gamerpower.com/api-read) (free games, in-game loot, beta keys).
 
-You can find the official documentation for the API wraper [here](https://gamerpower-async.readthedocs.io/en/latest/).
+You can find the official documentation for the API wrapper [here](https://gamerpower-async.readthedocs.io/en/latest/).
 
 Not affiliated with GamerPower. The API is free and needs no key. Their terms ask for an active hyperlink back to [GamerPower.com](https://www.gamerpower.com) wherever you show the data, and you may not sell the data or claim it as your own.
 
