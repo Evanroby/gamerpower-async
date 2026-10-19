@@ -2,11 +2,13 @@
 
 Unofficial async Python wrapper for the [GamerPower API](https://www.gamerpower.com/api-read) (free games, in-game loot, beta keys).
 
+[Docs](https://gamerpower-async.readthedocs.io/en/latest/) · [PyPI](https://pypi.org/project/gamerpower-async/)
+
 Not affiliated with GamerPower. The API is free and needs no key. Their terms ask for an active hyperlink back to [GamerPower.com](https://www.gamerpower.com) wherever you show the data, and you may not sell the data or claim it as your own.
 
 ## Install
 
-```
+```bash
 pip install gamerpower-async
 ```
 
@@ -66,20 +68,9 @@ A failed poll is logged on the `gamerpower` logger and retried at the next inter
 - `end_date` and `published_date` are naive datetimes, the API does not document a timezone.
 - `Giveaway.type` and `Giveaway.platforms` are the API's display labels (for example `"PC, Steam"` becomes `("PC", "Steam")`), not the filter slugs from `Platform`.
 
-## Documentation
-
-Full documentation (guides, API reference) lives in `docs/` and is built with Sphinx and the Furo theme:
-
-```
-pip install -e ".[docs]"
-python -m sphinx -b html docs docs/_build/html
-```
-
-`.readthedocs.yaml` is set up for Read the Docs.
-
 ## Tests
 
-```
+```bash
 python tests/test_gamerpower.py
 ```
 
