@@ -7,7 +7,7 @@ Not affiliated with GamerPower. The API is free and needs no key. Their terms as
 ## Install
 
 ```
-pip install -e .
+pip install gamerpower-async
 ```
 
 Python 3.11+, the only dependency is `httpx`.
